@@ -35,4 +35,5 @@ dist/
 *.tmp
 
 # Database files
+db
 db/user.txt  # Ignore this if you don't want to track the data
