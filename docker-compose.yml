@@ -1,0 +1,20 @@
+services:
+  frontend:
+    build: ./frontend
+    ports:
+      - "9090:9000"
+    networks:
+      - web-app-network
+
+  backend:
+    build: ./backend
+    ports:
+      - "7000:6000"
+    volumes:
+      - ~/web-app/db:/app/db
+    networks:
+      - web-app-network
+
+networks:
+  web-app-network:
+    driver: bridge
