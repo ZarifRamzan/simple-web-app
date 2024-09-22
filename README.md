@@ -19,7 +19,7 @@ http://localhost:9090/
 http://localhost:6000/submit-name
 
 ## Test Backend Functionality
-docker compose up -d
+docker compose up -d  
 curl -X POST http://localhost:6000/submit-name -H "Content-Type: application/json" -d '{"name":"test", "age":30}'
 
 
