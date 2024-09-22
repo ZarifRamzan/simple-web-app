@@ -29,6 +29,11 @@ if (!fs.existsSync(filePath)) {
 app.post('/submit-name', (req, res) => {
   const { name, age } = req.body;
 
+  // Check if name or age is missing
+  if (!name || !age) {
+    return res.status(400).send('Name and age are required');
+  }
+
   // Format the output with a space after the comma
   const formattedOutput = `${name}, ${age}\n`;
 
