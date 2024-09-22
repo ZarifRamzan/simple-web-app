@@ -1,2 +1,2 @@
 #!/bin/sh
-eecho "This is our CCSD Project 2024"
+echo "This is our CCSD Project 2024"
