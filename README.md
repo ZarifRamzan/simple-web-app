@@ -12,4 +12,14 @@ This is a simple web application built with React for the frontend and Node.js f
 
 ## Project Structure
 
+## Front-end
+http://localhost:9090/
+
+## Back-end
+http://localhost:6000/submit-name
+
+## Test Backend Functionality
+docker compose up -d
+curl -X POST http://localhost:6000/submit-name -H "Content-Type: application/json" -d '{"name":"test", "age":30}'
+
 
