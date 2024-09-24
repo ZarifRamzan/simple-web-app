@@ -27,7 +27,7 @@
   },
   "jest": {
     "testEnvironment": "jsdom"
-    "moduleDirectories": ["node_modules", "src"] // Added for easier imports
+    "moduleDirectories": ["node_modules", "src"]
   }
 }
 
