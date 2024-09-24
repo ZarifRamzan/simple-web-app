@@ -1,7 +1,7 @@
 // __tests__/app.test.js
 import React from 'react';
 import { render, screen } from '@testing-library/react';
-import App from '../../frontend/src/App'; // Adjust this path as needed
+import App from '../frontend/src/App'; // Adjust this path as needed
 import request from 'supertest';
 import express from 'express';
 import bodyParser from 'body-parser';
